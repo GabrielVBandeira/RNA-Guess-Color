@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+        <title>Document</title>
+        <script src="https://unpkg.com/brain.js/dist/browser.js" defer></script>
+        <script src="script.js" defer></script>
+
+        <style>
+            .container {
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                gap: 20px;
+            }
+
+            #color {
+                width: 200px;
+                height: 200px;
+                border: 5px solid black;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                flex-direction: column;
+            }
+
+            #diagram {
+                width: 350px;
+                height: 350px;
+                border: 5px solid black;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                flex-direction: column;
+            }
+
+            .button {
+                display: inline;
+                justify-content: center;
+                align-items: center;
+                flex-direction: column;
+            }
+
+            .white {
+                color: white;
+            }
+        </style>
+    </head>
+    <body>
+        <div class="container">
+            <div id="color">
+                <div class="white">White Text</div>
+                <div>Black Text</div>
+                <div id="guess">Guess Text</div>
+            </div>
+
+            <div class="button">
+                <button class="button" id="white-button">White</button>
+                <button class="button" id="black-button">Black</button>
+                <button class="button" id="print-button">Print</button>
+            </div>
+            <div id="diagram"></div>
+        </div>
+    </body>
+</html>
